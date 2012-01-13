@@ -22,26 +22,29 @@ Partial Class mainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(mainForm))
         Me.btnCtrlAltDel = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCtrlAltDel
         '
-        Me.btnCtrlAltDel.Location = New System.Drawing.Point(82, 49)
+        Me.btnCtrlAltDel.Location = New System.Drawing.Point(12, 12)
         Me.btnCtrlAltDel.Name = "btnCtrlAltDel"
-        Me.btnCtrlAltDel.Size = New System.Drawing.Size(184, 33)
+        Me.btnCtrlAltDel.Size = New System.Drawing.Size(261, 109)
         Me.btnCtrlAltDel.TabIndex = 0
-        Me.btnCtrlAltDel.Text = "Disable Windows Shortcuts"
+        Me.btnCtrlAltDel.Text = "Hook Keyboard"
         Me.btnCtrlAltDel.UseVisualStyleBackColor = True
         '
         'mainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(360, 133)
+        Me.ClientSize = New System.Drawing.Size(284, 133)
         Me.Controls.Add(Me.btnCtrlAltDel)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "mainForm"
-        Me.Text = "KBHook Test"
+        Me.Text = "Disable Hot Keys"
         Me.ResumeLayout(False)
 
     End Sub

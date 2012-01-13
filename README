@@ -1,3 +1,5 @@
-Hooks keybaord so the key press can be intercepted before being passed to any application.
+Hooks keyboard so the key press can be intercepted before being passed to any application.
 Useful for disabling Windows Hot Keys (Ctrl + Alt + Del, Alt + Tab, etc).
 Can be used to build a keylogger too ;)
+The sample app won't run from within Visual Studio as it won't allow the app to add a hook.
+Build the exe and run it seperately.
